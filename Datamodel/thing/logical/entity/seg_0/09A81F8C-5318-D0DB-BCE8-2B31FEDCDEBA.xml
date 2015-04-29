@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="09A81F8C-5318-D0DB-BCE8-2B31FEDCDEBA" name="Lab">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:38:51 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab_id" id="9D64C73C-9DEC-B26E-96CF-B280EFE95B9F">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:39:02 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="lab_name" id="D1279E77-0520-D3D5-618C-EF813FB9B74B">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:39:09 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="division_id" id="730A822E-CB85-B482-5ADC-4A01492D8AA6">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:39:37 UTC</createdTime>
+<generatorID>82284AE2-7BD9-29E5-C589-F395171E8DD4</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8203E0A0-D95C-D2D1-2F30-E751B62F2AAD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1F07454F-3F3A-00A0-FE03-28CFFD8B268C" name="{entity} PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:39:25 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9D64C73C-9DEC-B26E-96CF-B280EFE95B9F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

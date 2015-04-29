@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="09A81F8C-5318-D0DB-BCE8-2B31FEDCDEBA" name="Lab" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2D264E42-37A1-0AE6-75A7-31D2E422DBA1" name="Member" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2D4F219F-E855-A51C-EE0A-B027C5474BAB" name="Documents" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2FD914B0-2B43-9A88-368A-968A7EC0E34E" name="Employee" seqName="seg_0"/>
+   <object objectType="Entity" objectID="996947B6-C8B8-8AAB-5347-1639051BCA86" name="Division" seqName="seg_0"/>
+   <object objectType="Entity" objectID="AFB5E3CB-19E3-E56E-297E-028184AD1DC9" name="Nested_list" seqName="seg_0"/>
+   <object objectType="Entity" objectID="FD68A3FD-5DD8-36FB-2F3E-2B35054E52F8" name="Notify_list" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3B7B3474-9396-EF2F-659E-76C5E94626DF" name="Relation_17" seqName="seg_0"/>
+   <object objectType="Relation" objectID="527CDB10-CA36-B299-3305-FDA1C1192954" name="Relation_8" seqName="seg_0"/>
+   <object objectType="Relation" objectID="82284AE2-7BD9-29E5-C589-F395171E8DD4" name="Relation_15" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9945A751-7533-687D-30F4-6168723DDFC6" name="Relation_22" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C1B82ECD-0768-5C0A-16A9-6999B91C9FD3" name="Relation_21" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D181AC4F-6CD0-7BAD-5D5A-C323F98B21E9" name="Relation_13" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FE8EC09C-B68E-F1E5-43C3-4478ED8DD3E9" name="Relation_20" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2D4F219F-E855-A51C-EE0A-B027C5474BAB" name="Documents">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:22:24 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="608DCAA5-BDA1-0A56-7708-05A36343A0DC">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:25:58 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="file_name" id="F2225D4B-EF1F-B543-71DC-9FFFBC4E864C">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:26:22 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+</Attribute>
+<Attribute name="file_mimetype" id="63FB2821-14E9-576D-7A9F-0E27933235C1">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:26:48 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_charset" id="A88368E2-DDCC-5AFC-F0A0-8105A4F8EBD1">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:27:12 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_data" id="71F34224-6BCC-7EAD-DB5E-528B40DF9A47">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:27:23 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="file_comment" id="C5B0F0A8-AB68-93F1-083A-79A77EA33565">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:27:49 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="tag" id="EE972E9C-367D-D5EA-812E-9E9B3AC1BF32">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:28:03 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="employee_id" id="EBF6E4D9-46DD-961A-92AA-F7715394E876">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:28:36 UTC</createdTime>
+<generatorID>D181AC4F-6CD0-7BAD-5D5A-C323F98B21E9</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B337027B-BF40-8CC3-065C-582E257EED06</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AA56A269-5DBB-ACC4-0876-8AB53BCAD995" name="{entity} PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-22 23:26:21 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>608DCAA5-BDA1-0A56-7708-05A36343A0DC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

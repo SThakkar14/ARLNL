@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="005BCC46-9A76-7506-1F1F-FEB1652907A7" name="Employee">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>2FD914B0-2B43-9A88-368A-968A7EC0E34E</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="9EA26297-5FED-024B-BD40-0A285D9FFA2A">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>B337027B-BF40-8CC3-065C-582E257EED06</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_first_name" id="B7DC6967-DE2F-2793-A675-A58A04480482">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>7BC2668E-1751-3664-B6F0-F5B2CAB18DBF</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_middle_name" id="CED5E357-5F99-444D-631D-F7AFCD28FEBB">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>B86A837A-A1A0-61A1-FF5F-81BE461E0700</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_last_name" id="CD8890AE-EFA9-27AD-54EE-20F40B28F608">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>40F26128-265B-C34B-4C19-9E75D024425F</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_status" id="879940A3-EEBC-6B96-2C93-3DA3CE916599">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>AAF99C3D-33AB-BA47-5FF7-400675AA8D41</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="admin_status" id="8EE9FCBC-BC1E-F79F-83FD-2B4CA266DF5E">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>94610B8A-DCB8-DB5F-F737-2539C01C210A</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Division_division_id" id="5A3E5302-8708-3D7B-2E20-24B31729CBD8">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>4463120D-40CC-50B3-1728-7AB95F62857D</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>FD333E3B-B066-3E64-600F-E9C8CBFF3F60</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D62A45B-8DFE-992B-B032-D696D8FBBBDC" referredColumn="FD333E3B-B066-3E64-600F-E9C8CBFF3F60"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02600DCD-5127-935A-93F7-5C00CE7C2F01" name="Employee_PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>28ADF0F0-811F-7F80-78A1-52BC24E6ECEA</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EA26297-5FED-024B-BD40-0A285D9FFA2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B2D9FEB-3C6C-1C93-8439-686F1702FD1D" name="Employee_Division_FK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>527CDB10-CA36-B299-3305-FDA1C1192954</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A3E5302-8708-3D7B-2E20-24B31729CBD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

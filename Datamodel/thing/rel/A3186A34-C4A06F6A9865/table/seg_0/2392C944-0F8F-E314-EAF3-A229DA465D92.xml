@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2392C944-0F8F-E314-EAF3-A229DA465D92" name="Nested_list">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:43 UTC</createdTime>
+<generatorID>AFB5E3CB-19E3-E56E-297E-028184AD1DC9</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="n_list_id" id="B9A9B601-41FA-4123-8B6B-7F524F202682">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:43 UTC</createdTime>
+<generatorID>D7D75AEF-4CA9-C0FC-A670-E34F9AEE4AE5</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Notify_list_list_id" id="77A106B5-E7A2-A01B-6ECD-E9E242B2AD17">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:43 UTC</createdTime>
+<generatorID>41239CC5-16CC-E3CB-475C-BBB300C8F428</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>71C7D368-3CF5-63E2-15E5-48B5ECC9A95E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A41D086-6F91-ED26-F59F-0AE41DDB4BBB" referredColumn="71C7D368-3CF5-63E2-15E5-48B5ECC9A95E"/>
+</associations>
+</Column>
+<Column name="Notify_list_list_id1" id="43796888-D663-E1E7-43C9-544ACB63A777">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:43 UTC</createdTime>
+<generatorID>CDE62053-2B2E-8623-BCC6-3E216B4872F2</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>71C7D368-3CF5-63E2-15E5-48B5ECC9A95E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CC30279-9F4D-E89D-9C3E-C0A8BEA0B614" referredColumn="71C7D368-3CF5-63E2-15E5-48B5ECC9A95E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="717BB245-3C1E-8CED-29A2-90997616810C" name="Nested_list_PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:43 UTC</createdTime>
+<generatorID>D7FEC84D-5871-EA32-7EC8-9B4BB05A6DDA</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9A9B601-41FA-4123-8B6B-7F524F202682"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD2482B9-CDFE-0C3D-BF5A-717BC4586C1A" name="Nested_list_Notify_list_FK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:43 UTC</createdTime>
+<generatorID>C1B82ECD-0768-5C0A-16A9-6999B91C9FD3</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77A106B5-E7A2-A01B-6ECD-E9E242B2AD17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A1856B4-752E-28DE-B02A-49D4E1666CA6" name="Nested_list_Notify_list_FKv1">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:43 UTC</createdTime>
+<generatorID>9945A751-7533-687D-30F4-6168723DDFC6</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43796888-D663-E1E7-43C9-544ACB63A777"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

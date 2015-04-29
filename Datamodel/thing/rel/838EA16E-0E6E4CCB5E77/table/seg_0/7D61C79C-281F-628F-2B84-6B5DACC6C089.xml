@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D61C79C-281F-628F-2B84-6B5DACC6C089" name="Member">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>2D264E42-37A1-0AE6-75A7-31D2E422DBA1</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="member_id" id="01D026CC-12E7-E637-B04A-A13E7D013053">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>FA7FBABE-E0EE-CD0E-9227-78756B8D4881</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Employee_employee_id" id="5F8A492D-A01A-8DD9-9E11-632EC8CC367F">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>20061DB3-3CC6-3DCB-49F7-E501607FBFFE</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>9EA26297-5FED-024B-BD40-0A285D9FFA2A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CBF99524-5060-920F-BC6A-01762CA888B0" referredColumn="9EA26297-5FED-024B-BD40-0A285D9FFA2A"/>
+</associations>
+</Column>
+<Column name="Notify_list_list_id" id="63A6DFAB-69E9-D040-2961-89E3F7A630D8">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>8ECF280C-BF02-6484-DABE-19D7CB468182</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>F261B701-CBA9-B935-B7EE-DFF7D9277A82</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F9076CF-1844-2A18-E50B-04A3C20F9A05" referredColumn="F261B701-CBA9-B935-B7EE-DFF7D9277A82"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE8C033F-798D-0644-897B-541F1B8C4C5C" name="Member_PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>3A2F56E7-13B2-0F31-B739-EA8923EBB543</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01D026CC-12E7-E637-B04A-A13E7D013053"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF154CD5-AC48-EE99-14C4-33D61C710702" name="Member_Employee_FK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>3B7B3474-9396-EF2F-659E-76C5E94626DF</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F8A492D-A01A-8DD9-9E11-632EC8CC367F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01ED507B-DB67-CD40-932F-AC5B1C080B3A" name="Member_Notify_list_FK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>FE8EC09C-B68E-F1E5-43C3-4478ED8DD3E9</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63A6DFAB-69E9-D040-2961-89E3F7A630D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

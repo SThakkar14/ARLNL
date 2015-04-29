@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2FD914B0-2B43-9A88-368A-968A7EC0E34E" name="Employee">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-29 01:24:06 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="employee_id" id="B337027B-BF40-8CC3-065C-582E257EED06">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-29 01:24:22 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="employee_first_name" id="7BC2668E-1751-3664-B6F0-F5B2CAB18DBF">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-29 01:24:43 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="employee_middle_name" id="B86A837A-A1A0-61A1-FF5F-81BE461E0700">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-25 01:16:54 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="employee_last_name" id="40F26128-265B-C34B-4C19-9E75D024425F">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-25 01:17:07 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="employee_status" id="AAF99C3D-33AB-BA47-5FF7-400675AA8D41">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-29 01:26:47 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="admin_status" id="94610B8A-DCB8-DB5F-F737-2539C01C210A">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-25 01:14:49 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="division_id" id="4463120D-40CC-50B3-1728-7AB95F62857D">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-27 22:48:11 UTC</createdTime>
+<generatorID>527CDB10-CA36-B299-3305-FDA1C1192954</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8203E0A0-D95C-D2D1-2F30-E751B62F2AAD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28ADF0F0-811F-7F80-78A1-52BC24E6ECEA" name="{entity} PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-29 01:24:41 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="4F103B44-E94F-8CBA-1025-5D7B5245CB94" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B337027B-BF40-8CC3-065C-582E257EED06</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

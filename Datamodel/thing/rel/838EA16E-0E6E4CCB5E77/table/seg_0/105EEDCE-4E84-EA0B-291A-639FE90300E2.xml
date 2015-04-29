@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="105EEDCE-4E84-EA0B-291A-639FE90300E2" name="Lab">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>09A81F8C-5318-D0DB-BCE8-2B31FEDCDEBA</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lab_id" id="5A1BD328-F937-8BF5-A5C5-320BCE69B2EE">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>9D64C73C-9DEC-B26E-96CF-B280EFE95B9F</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab_name" id="152CFB4D-D6A6-1EA8-45F2-9F25A46BF852">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>D1279E77-0520-D3D5-618C-EF813FB9B74B</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Division_division_id" id="A4E3900D-8379-4C4A-320D-4E813DBE87F5">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>730A822E-CB85-B482-5ADC-4A01492D8AA6</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>FD333E3B-B066-3E64-600F-E9C8CBFF3F60</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="651030E7-2049-1FC7-5B41-A798683A3762" referredColumn="FD333E3B-B066-3E64-600F-E9C8CBFF3F60"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D110D4C5-44BB-1048-4954-A8D77572951B" name="Lab_PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>1F07454F-3F3A-00A0-FE03-28CFFD8B268C</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A1BD328-F937-8BF5-A5C5-320BCE69B2EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C926883E-E49D-4625-4910-BC74EBE5E473" name="Lab_Division_FK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>82284AE2-7BD9-29E5-C589-F395171E8DD4</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4E3900D-8379-4C4A-320D-4E813DBE87F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

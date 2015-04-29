@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1EF71EB-BC9F-8D51-827D-B700AE07AEB6" name="Nested_list_Notify_list_FKv1">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-28 05:58:18 UTC</createdTime>
+<generatorID>9945A751-7533-687D-30F4-6168723DDFC6</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<containerWithKeyObject>8E4E7795-03C5-C168-0DE1-2D918A2A0631</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>1AE574A1-EF2D-7AAC-4359-2FC80876FEA9</localFKIndex>
+<keyObject>043339AF-9793-DAA8-7FEE-2AC280B2BC88</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

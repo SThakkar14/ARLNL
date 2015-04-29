@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2D264E42-37A1-0AE6-75A7-31D2E422DBA1" name="Member">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-29 01:45:31 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_id" id="FA7FBABE-E0EE-CD0E-9227-78756B8D4881">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-30 21:25:37 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="employee_id" id="20061DB3-3CC6-3DCB-49F7-E501607FBFFE">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-25 01:11:23 UTC</createdTime>
+<generatorID>3B7B3474-9396-EF2F-659E-76C5E94626DF</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B337027B-BF40-8CC3-065C-582E257EED06</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="list_id" id="8ECF280C-BF02-6484-DABE-19D7CB468182">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-04-25 01:12:10 UTC</createdTime>
+<generatorID>FE8EC09C-B68E-F1E5-43C3-4478ED8DD3E9</generatorID>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B1540DFF-C94F-EC46-16F3-EDD22BCBE51E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3A2F56E7-13B2-0F31-B739-EA8923EBB543" name="{entity} PK">
+<createdBy>Shubham</createdBy>
+<createdTime>2015-03-29 02:07:18 UTC</createdTime>
+<ownerDesignName>thing</ownerDesignName>
+<engineerTo>
+<item key="B2B668A6-B180-A91C-5852-4D6B43150B6E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FA7FBABE-E0EE-CD0E-9227-78756B8D4881</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

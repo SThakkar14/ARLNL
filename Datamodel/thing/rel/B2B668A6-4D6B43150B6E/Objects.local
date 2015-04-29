@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="E4B8C42F-A4BF-28E8-3A83-CED3FA1F2C74" name="Division" seqName="seg_0"/>
+   <object objectType="Table" objectID="1B521BEF-0E65-E087-E3F8-79A7B4F33018" name="Documents" seqName="seg_0"/>
+   <object objectType="Table" objectID="B72DC98B-6403-AD9A-6CC6-1D00BFB3061D" name="Employee" seqName="seg_0"/>
+   <object objectType="Table" objectID="4F29A925-7F77-08C9-007C-6B501F3BC8CE" name="Lab" seqName="seg_0"/>
+   <object objectType="Table" objectID="53F4030A-7392-29AA-EFC0-ED63F65B8CD9" name="Member" seqName="seg_0"/>
+   <object objectType="Table" objectID="4AD6B635-AD0C-E861-8FFB-462E31BD5216" name="Nested_list" seqName="seg_0"/>
+   <object objectType="Table" objectID="ECDEEAB9-B429-6FDC-C2C1-5A4AFFB528B7" name="Notify_list" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F645A51E-0C20-9FA4-E906-A5856F8484E9" name="Division_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A0C9A8CD-9463-3A30-3B3F-E5ADC3993363" name="Documents_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="EC2E2060-9556-B571-5030-F8AF1BCBF54C" name="Employee_Division_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C3DE5948-C186-28E7-FE91-DF73EC0BD3B1" name="Lab_Division_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D366204C-C8BB-0189-CE92-07A50D07B797" name="Member_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="1FCE71FE-5691-1EDF-C904-B99E26459A6D" name="Member_Notify_list_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8AD93527-FF79-470D-A258-29B8C4CC9F88" name="Nested_list_Notify_list_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="74CD56D1-523C-EFEE-4E6E-01EE1B7513A1" name="Nested_list_Notify_list_FKv1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

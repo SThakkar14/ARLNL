@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="B1349606-B56D-6257-6C5F-FBCD5D190407" name="Division" seqName="seg_0"/>
+   <object objectType="Table" objectID="F3D2BEA3-1B36-C4AD-CC01-CE725A30591A" name="Documents" seqName="seg_0"/>
+   <object objectType="Table" objectID="BD446830-A5DD-0409-4EE4-3849FADF4244" name="Employee" seqName="seg_0"/>
+   <object objectType="Table" objectID="5832AA7C-C76B-3DE8-23B6-31C3E2999251" name="Lab" seqName="seg_0"/>
+   <object objectType="Table" objectID="AB334CA6-3A65-ECF5-0F07-DEFF3D531555" name="Member" seqName="seg_0"/>
+   <object objectType="Table" objectID="2392C944-0F8F-E314-EAF3-A229DA465D92" name="Nested_list" seqName="seg_0"/>
+   <object objectType="Table" objectID="3D900B8C-09F8-EE27-F314-727BE338EF48" name="Notify_list" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A3945DB5-AB29-E432-C25B-1DE0B5F98792" name="Documents_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="85E55FA3-75D5-727E-80F1-3E2C883206BB" name="Employee_Division_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9587F911-4715-C313-F1AE-571BA0CA0202" name="Lab_Division_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DD2196FA-B26E-C6BA-AD52-7AF685F78EDA" name="Member_Employee_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C698EF5D-C425-2D63-BD1A-2DACB64D0DC0" name="Member_Notify_list_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4A41D086-6F91-ED26-F59F-0AE41DDB4BBB" name="Nested_list_Notify_list_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8CC30279-9F4D-E89D-9C3E-C0A8BEA0B614" name="Nested_list_Notify_list_FKv1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
