@@ -1,0 +1,294 @@
+DROP SEQUENCE Division_seq ; 
+create sequence Division_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger Division_PK_trig 
+before insert on Division
+for each row 
+begin 
+select Division_seq.nextval into :new.division_id from dual; 
+end; 
+/
+alter table Division add created date ; 
+alter table Division add created_by VARCHAR2 (255) ; 
+alter table Division add row_version_number integer ; 
+alter table Division add updated date ; 
+alter table Division add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger Division_AUD_trig 
+before insert or update on Division 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE Documents_seq ; 
+create sequence Documents_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger Documents_PK_trig 
+before insert on Documents
+for each row 
+begin 
+select Documents_seq.nextval into :new.document_id from dual; 
+end; 
+/
+alter table Documents add created date ; 
+alter table Documents add created_by VARCHAR2 (255) ; 
+alter table Documents add row_version_number integer ; 
+alter table Documents add updated date ; 
+alter table Documents add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger Documents_AUD_trig 
+before insert or update on Documents 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE Employee_seq ; 
+create sequence Employee_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger Employee_PK_trig 
+before insert on Employee
+for each row 
+begin 
+select Employee_seq.nextval into :new.employee_id from dual; 
+end; 
+/
+alter table Employee add created date ; 
+alter table Employee add created_by VARCHAR2 (255) ; 
+alter table Employee add row_version_number integer ; 
+alter table Employee add updated date ; 
+alter table Employee add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger Employee_AUD_trig 
+before insert or update on Employee 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE Lab_seq ; 
+create sequence Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger Lab_PK_trig 
+before insert on Lab
+for each row 
+begin 
+select Lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+alter table Lab add created date ; 
+alter table Lab add created_by VARCHAR2 (255) ; 
+alter table Lab add row_version_number integer ; 
+alter table Lab add updated date ; 
+alter table Lab add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger Lab_AUD_trig 
+before insert or update on Lab 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE Member_seq ; 
+create sequence Member_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger Member_PK_trig 
+before insert on Member
+for each row 
+begin 
+select Member_seq.nextval into :new.member_id from dual; 
+end; 
+/
+alter table Member add created date ; 
+alter table Member add created_by VARCHAR2 (255) ; 
+alter table Member add row_version_number integer ; 
+alter table Member add updated date ; 
+alter table Member add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger Member_AUD_trig 
+before insert or update on Member 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE Nested_list_seq ; 
+create sequence Nested_list_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger Nested_list_PK_trig 
+before insert on Nested_list
+for each row 
+begin 
+select Nested_list_seq.nextval into :new.n_list_id from dual; 
+end; 
+/
+alter table Nested_list add created date ; 
+alter table Nested_list add created_by VARCHAR2 (255) ; 
+alter table Nested_list add row_version_number integer ; 
+alter table Nested_list add updated date ; 
+alter table Nested_list add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger Nested_list_AUD_trig 
+before insert or update on Nested_list 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE Notify_list_seq ; 
+create sequence Notify_list_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger Notify_list_PK_trig 
+before insert on Notify_list
+for each row 
+begin 
+select Notify_list_seq.nextval into :new.list_id from dual; 
+end; 
+/
+alter table Notify_list add created date ; 
+alter table Notify_list add created_by VARCHAR2 (255) ; 
+alter table Notify_list add row_version_number integer ; 
+alter table Notify_list add updated date ; 
+alter table Notify_list add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger Notify_list_AUD_trig 
+before insert or update on Notify_list 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX Employee_employee_id_FK_0 ;
+CREATE INDEX Employee_employee_id_FK_0 ON Documents(Employee_employee_id) ;
+DROP INDEX Division_division_id_FK_1 ;
+CREATE INDEX Division_division_id_FK_1 ON Employee(Division_division_id) ;
+DROP INDEX Division_division_id_FK_2 ;
+CREATE INDEX Division_division_id_FK_2 ON Lab(Division_division_id) ;
+DROP INDEX Employee_employee_id_FK_3 ;
+CREATE INDEX Employee_employee_id_FK_3 ON Member(Employee_employee_id) ;
+DROP INDEX Notify_list_list_id_FK_4 ;
+CREATE INDEX Notify_list_list_id_FK_4 ON Member(Notify_list_list_id) ;
+DROP INDEX Notify_list_list_id_FK_5 ;
+CREATE INDEX Notify_list_list_id_FK_5 ON Nested_list(Notify_list_list_id) ;
+DROP INDEX Notify_list_list_id1_FK_6 ;
+CREATE INDEX Notify_list_list_id1_FK_6 ON Nested_list(Notify_list_list_id1) ;
